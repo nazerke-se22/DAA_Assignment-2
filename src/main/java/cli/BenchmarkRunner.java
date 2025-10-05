@@ -11,7 +11,7 @@ public class BenchmarkRunner {
 
     public static void main(String[] args) throws IOException {
         String algo = args.length > 0 ? args[0] : "selectionsort";
-        String output = args.length > 1 ? args[1] : "results.csv";
+        String output = args.length > 1 ? args[1] : "opt_result.csv";
         int trials = args.length > 2 ? Integer.parseInt(args[2]) : 3;
 
         int[] sizes = {100, 1000, 10000, 100000};
