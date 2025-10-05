@@ -11,8 +11,15 @@ public class SelectionSort {
     }
 
     public void sort(int[] arr) {
+        if (arr == null) {
+            System.out.println("SelectionSort: received null array, skipping.");
+            return;
+        }
+
         int n = arr.length;
-        if (n <= 1) return;
+        if (n <= 1) {
+            return;
+        }
 
         tracker.alloc(1);
 
@@ -24,8 +31,8 @@ public class SelectionSort {
             int minVal = arr[i];
 
             boolean nonDecreasing = true;
-
             int prev = minVal;
+
             for (int j = i + 1; j < n; j++) {
                 tracker.read();
                 int aj = arr[j];
@@ -52,12 +59,11 @@ public class SelectionSort {
                 arr[i] = arr[minIndex];
                 arr[minIndex] = temp;
             } else if (nonDecreasing) {
-
                 break;
             }
         }
 
         long elapsed = System.nanoTime() - start;
-        System.out.println("SelectionSort (fixed early termination): " + tracker + ", time=" + elapsed + " ns");
+        System.out.println("SelectionSort (fixed edge cases): " + tracker + ", time=" + elapsed + " ns");
     }
 }

@@ -11,6 +11,12 @@ import static org.junit.jupiter.api.Assertions.*;
 public class SelectionSortTest {
 
     @Test
+    void testNullArray() {
+        assertDoesNotThrow(() -> new SelectionSort(new PerformanceTracker()).sort(null),
+                "Null array should not throw exception");
+    }
+
+    @Test
     void testEmptyArray() {
         int[] arr = {};
         int[] expected = {};
@@ -55,7 +61,6 @@ public class SelectionSortTest {
         int[] arr = {9, 2, 7, 1, 3};
         int[] expected = arr.clone();
         Arrays.sort(expected);
-
         new SelectionSort(new PerformanceTracker()).sort(arr);
         assertArrayEquals(expected, arr, "Random small array should match Arrays.sort()");
     }
@@ -63,7 +68,6 @@ public class SelectionSortTest {
     @Test
     void testPropertyBasedRandomArrays() {
         Random rand = new Random(42);
-
         for (int trial = 0; trial < 100; trial++) {
             int n = rand.nextInt(50) + 1;
             int[] arr = new int[n];
