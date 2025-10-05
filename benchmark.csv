@@ -1,0 +1,10 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99,9%)","Unit","Param: n"
+"benchmarks.SelectionBench.selectionSortRandom","avgt",1,5,"23,398434","74,289560","us/op",100
+"benchmarks.SelectionBench.selectionSortRandom","avgt",1,5,"291,040067","110,603625","us/op",1000
+"benchmarks.SelectionBench.selectionSortRandom","avgt",1,5,"20908,224180","544,509468","us/op",10000
+"benchmarks.SelectionBench.selectionSortReversed","avgt",1,5,"12,421611","24,181374","us/op",100
+"benchmarks.SelectionBench.selectionSortReversed","avgt",1,5,"394,060506","13,800825","us/op",1000
+"benchmarks.SelectionBench.selectionSortReversed","avgt",1,5,"39444,738347","18610,885919","us/op",10000
+"benchmarks.SelectionBench.selectionSortSorted","avgt",1,5,"16,082396","43,751398","us/op",100
+"benchmarks.SelectionBench.selectionSortSorted","avgt",1,5,"11,093230","15,377092","us/op",1000
+"benchmarks.SelectionBench.selectionSortSorted","avgt",1,5,"19,484150","31,272016","us/op",10000
