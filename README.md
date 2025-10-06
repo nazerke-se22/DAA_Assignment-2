@@ -150,8 +150,10 @@ mvn clean install
 java -jar target/benchmarks.jar
 
 Benchmark results will be stored in benchmark.csv and opt_result.csv for further analysis.
+```
+---
 
-Release Notes (v1.0)
+##Release Notes (v1.0)
 Implemented optimized Selection Sort with early termination.
 Integrated PerformanceTracker for detailed metric collection.
 Added CLI BenchmarkRunner for configurable performance tests.
@@ -161,7 +163,7 @@ Exported benchmark results to CSV files for empirical evaluation.
 Configured GitHub Actions CI workflow (.github/workflows/ci.yml).
 Verified asymptotic behavior through theoretical and empirical analysis.
 
-Conclusion
+##Conclusion
 The Selection Sort implementation fulfills all functional and analytical requirements of the assignment.
 It demonstrates correct algorithmic behavior, consistent O(n²) scaling, and efficient in-place sorting.
 Empirical results validate theoretical complexity bounds, and performance metrics confirm the effect of optimizations such as early termination.
