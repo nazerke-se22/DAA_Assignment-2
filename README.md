@@ -23,21 +23,37 @@ It was developed as part of the **Design and Analysis of Algorithms (DAA) — As
 ## Repository Structure
 
 Assignment2_DAA/
+
 ├── src/
+
 │ ├── main/java/
+
 │ │ ├── algorithms/SelectionSort.java
+
 │ │ ├── benchmarks/SelectionBench.java
+
 │ │ ├── cli/BenchmarkRunner.java
+
 │ │ └── metrics/PerformanceTracker.java
+
 │ └── test/java/
+
 │ └── algorithms/SelectionSortTest.java
+
 ├── benchmark.csv
+
 ├── opt_result.csv
+
 ├── results.csv
+
 ├── docs/
+
 │ ├── analysis-report.pdf
+
 │ └── performance-plots/
+
 ├── pom.xml
+
 └── README.md
 
 
